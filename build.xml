@@ -13,10 +13,10 @@
 		<antcall target="KH_Common.prepare" />
 		<antcall target="dependencies.download" />
 		<antcall target="KH_Common.compile" />
-		<antcall target="KH_Common.test" />
-		<antcall target="KH_Common.checkstyle" />
+		<!--antcall target="KH_Common.test" /-->
+		<!--antcall target="KH_Common.checkstyle" /-->
 		<antcall target="KH_Common.package.jar" />
-		<antcall target="KH_Common.test.report" />
+		<!--antcall target="KH_Common.test.report" /-->
 	</target>
 
 	<target name="dependencies.download">
