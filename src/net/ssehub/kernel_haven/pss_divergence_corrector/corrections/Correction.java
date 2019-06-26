@@ -98,13 +98,12 @@ public abstract class Correction implements ITableRow {
                     descriptionStringBuilder.append("\"" + splittedInvolvedElements[1] + "\"");
                 } else if (involvedElementsNumber > 2) {
                     // More than 2 elements: return ""Elem1, Elem2, [...], and "ElemX""
-                    int i;
-                    for (i = 1; i < involvedElementsNumber - 1; i++) {
+                    for (int i = 1; i < involvedElementsNumber - 1; i++) {
                         descriptionStringBuilder.append(", ");
                         descriptionStringBuilder.append(splittedInvolvedElements[i]);
                     }
                     descriptionStringBuilder.append(", and ");
-                    descriptionStringBuilder.append("\"" + splittedInvolvedElements[i + 1] + "\"");
+                    descriptionStringBuilder.append("\"" + splittedInvolvedElements[involvedElementsNumber - 1] + "\"");
                 }
             }
         }
